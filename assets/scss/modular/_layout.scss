@@ -1,0 +1,17 @@
+#__nuxt,
+#__layout {
+  height: 100%;
+}
+.main-wrapper {
+  min-height: 100%;
+}
+.is-fullwidth {
+  max-width: 100% !important;
+}
+.is-boxed {
+  > .container {
+    @media screen and (min-width: 1680px) {
+      max-width: 1640px !important;
+    }
+  }
+}

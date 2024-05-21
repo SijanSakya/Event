@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Abel";
+  src: url("~assets/fonts/Abel-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Abel";
+  src: url("~assets/fonts/AbelPro-Bold.ttf");
+  font-weight: 700;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 16px;
+  overflow-y: auto;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100%;
+}
+:root {
+  --headerOpacity: 1;
+  --headerScale: 1;
+}
+body {
+  font-family: "Abel", sans-serif;
+  line-height: 1.2;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  color: #d3001b;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.pl-6 {
+  padding-left: 1.5rem !important;
+}
+.pr-6 {
+  padding-right: 1.5rem !important;
+}
+.pb-6 {
+  padding-bottom: 1.5rem !important;
+}
+.pt-6 {
+  padding-top: 1.5rem !important;
+}
+.pb-2 {
+  padding-bottom: 0.5rem !important;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.svg-icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.flex {
+  display: flex !important;
+}
+.flex-none {
+  -ms-flex: none !important;
+  flex: none !important;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.f-large {
+  font-size: 2rem !important;
+  @media screen and (min-width: 768px) {
+    font-size: 2.3rem !important;
+  }
+  @media screen and (min-width: 1020px) {
+    font-size: 3rem !important;
+  }
+  @media screen and (min-width: 1404px) {
+    font-size: 3.6rem !important;
+  }
+}
+
+.f-medium {
+  font-size: 1.5rem !important;
+  @media screen and (min-width: 768px) {
+    font-size: 1.8rem !important;
+  }
+  @media screen and (min-width: 1020px) {
+    font-size: 2.3rem !important;
+  }
+  @media screen and (min-width: 1404px) {
+    font-size: 2.8rem !important;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size: 3rem !important;
+  }
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #ffffff;
+}
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.b-tooltip.is-transparent {
+  .tooltip-content {
+    padding: 10px;
+    background: #000000 !important;
+    border: 1px solid #707070 !important;
+    @media screen and (min-width: 1024px) {
+      padding: 15px 20px;
+      background: transparent !important;
+    }
+
+    a {
+      color: #ffffff;
+    }
+  }
+  &.is-right {
+    .tooltip-content {
+      left: calc(100% + 15px + 2px) !important;
+      &:before {
+        border-right-color: #707070;
+        border-right-width: 8px;
+      }
+    }
+  }
+}
+
+.text-center-touch {
+  @media screen and (max-width: 1023px) {
+    text-align: center;
+  }
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.button.auth.subscribe-button {
+  color: #000000;
+}
+
+.page--home.page--event-index, .page--watch.page--watch--index {
+  .mobile-hero {
+    height: 100vh;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .hidden-tablet {
+    @media screen and (min-width: 481px) {
+      display: none;
+    }
+  }
+  .hidden-mobile {
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+}

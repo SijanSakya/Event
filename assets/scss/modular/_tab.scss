@@ -1,0 +1,70 @@
+.tab-wrapper {
+  width: 100%;
+}
+.b-tabs {
+  .tabs {
+    margin-bottom: 20px;
+    ul,
+    li,
+    a {
+      border: none;
+    }
+
+    li {
+      a {
+        .title {
+          color: #abadb1;
+          font-weight: 500;
+          font-size: 1rem;
+          @media screen and (min-width: 769px){
+            font-size: 2rem;
+          }
+        }
+        &:hover {
+          .title {
+            color: #000000;
+          }
+        }
+      }
+      &.is-active {
+        a {
+          .title {
+            color: #000000;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  &--primary {
+    .tabs {
+      li {
+        a {
+          .title {
+            color: white;
+          }
+          &:hover {
+            color: #FF2727;
+            .title {
+              color: #FF2727;
+            }
+          }
+        }
+        &.is-active {
+          a {
+            .title {
+              color: #FF2727;
+            }
+          }
+        }
+        + li {
+          border-left: 1px solid #cccccc
+        }
+      }
+    }
+    .tab-content {
+      border: 1px solid #707070;
+      padding: 30px;
+    }
+  }
+}

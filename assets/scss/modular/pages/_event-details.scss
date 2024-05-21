@@ -1,0 +1,175 @@
+.page--event-details,
+.page--content {
+  color: #ffffff;
+  padding-bottom: 0px;
+  @media screen and (max-width: 1023px) {
+    padding-top: 50px !important;
+  }
+  .section.hero {
+    padding: 0px;
+  }
+  .text-section {
+    padding-top: 40px;
+    @media screen and (min-width: 1024px) {
+      padding-top: 90px;
+    }
+    .subscribe-button-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media screen and (min-width: 1024px) {
+        padding: 0px 60px 60px;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      @media screen and (min-width: 1200px) {
+        margin: 0 auto;
+        width: 70%;
+      }
+      @media screen and (min-width: 1404px) {
+        margin: 0 auto;
+        width: 60%;
+      }
+      .subscribe-button {
+        background: #d3001b;
+        border: none;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    padding-left: 50px;
+    @media screen and (min-width: 576px) {
+      padding: 0px 40px 40px;
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 0px 60px 30px;
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+      width: 70%;
+    }
+    @media screen and (min-width: 1404px) {
+      margin: 0 auto;
+      width: 60%;
+    }
+  }
+  .heading-section {
+    position: relative;
+    padding: 0.5rem;
+    .title.f-medium {
+      @media screen and (max-width: 576px) {
+        font-size: 16px !important;
+      }
+      @media screen and (min-width: 1023px) and (max-width: 1200px) {
+        font-size: 28px !important;
+      }
+    }
+  }
+
+  .content {
+    color: black;
+  }
+  &.page--project-one {
+    .text-section {
+      background-image: url("~static/img/events/hero/1-bg.png");
+    }
+  }
+  &.page--fight-club {
+    .text-section {
+      background-image: url("~static/img/events/hero/2-bg.png");
+      background-position: center top;
+      background-size: cover;
+      @media screen and (max-width: 567px) {
+        background-image: url("~static/img/events/hero/2-mobile-bg.png");
+        background-position: bottom left;
+        background-size: 137px;
+      }
+      @media screen and (min-width: 568px) and (max-width: 1023px) {
+        background-position: center bottom;
+      }
+    }
+  }
+  &.page--album-anuprastra {
+    .text-section {
+      background-image: url("~static/img/events/hero/3-bg.jpg");
+      background-position: bottom right;
+      background-size: contain;
+    }
+  }
+  &.page--pve-live {
+    .text-section {
+      background-image: url("~static/img/events/hero/5-bg.png");
+      background-size: contain;
+      background-position: 100% 30px;
+      @media screen and (max-width: 567px) {
+        background-position: bottom right;
+      }
+    }
+  }
+  &.page--roasted {
+    .text-section {
+      background-image: url("~static/img/events/hero/4-bg.png");
+      background-size: contain;
+      background-position: center right;
+      @media screen and (max-width: 567px) {
+        background-position: bottom right;
+        background-size: contain;
+      }
+    }
+  }
+  .text-section {
+    position: relative;
+    background-position: center bottom;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media screen and (min-width: 1024px) {
+      background-size: cover;
+    }
+  }
+  .sharer {
+    padding-top: 0.2rem;
+    position: absolute;
+    right: 90px;
+    top: 0px;
+    .button {
+      color: #ffffff;
+    }
+    @media screen and (max-width: 767px) {
+      display: none;
+      .button.plain--small {
+        padding: 0.3rem 0.8rem;
+      }
+    }
+    @media screen and (max-width: 1023px) {
+      .button.plain--small {
+        padding: 0.3rem 0.9rem;
+      }
+    }
+    .b-tooltip.is-transparent {
+      .tooltip-content {
+        background-color: #000000 !important;
+      }
+    }
+  }
+}
+
+.page--content {
+  &.page--connect {
+    .content {
+      padding-left: 0px;
+      padding-top: 40px;
+      padding-right: 0px;
+      color: #ffffff;
+      .title {
+        margin: 0px auto;
+      }
+    }
+  }
+}

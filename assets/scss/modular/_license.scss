@@ -1,0 +1,9 @@
+.licence {
+  margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    margin-top: 10px;
+  }
+  .columns {
+    justify-content: center;
+  }
+}

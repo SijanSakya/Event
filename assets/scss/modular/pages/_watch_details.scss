@@ -1,0 +1,60 @@
+.page--watch-details {
+  .hero {
+    .bottom-content {
+      justify-content: flex-end;
+      .overlay-content {
+        bottom: 24%;
+        @media screen and (min-width: 1023px) and (max-width: 1200px) {
+          bottom: 21%;
+        }
+      }
+    }
+  }
+  .hero.slider .carousel-item {
+    height: auto;
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+  .content {
+    color: #707070;
+  }
+  .mobile-sharer {
+    display: block;
+    @media screen and (min-width: 567px) {
+      left: 1.2rem;
+    }
+    @media screen and (min-width: 1023px) {
+      left: 2%;
+    }
+    @media screen and (min-width: 1200px) {
+      left: 15%;
+    }
+    @media screen and (min-width: 1404px) {
+      left: 20%;
+    }
+  }
+  .title {
+    font-size: 1rem;
+    margin: 5px !important;
+    margin-block: 0px;
+    @media screen and (min-width: 1024px) {
+      font-size: 24px;
+      margin-bottom: 10px !important;;
+    }
+  }
+  .desktop-watch-item {
+    display: none;
+    padding: calc(1rem + 1.5rem) calc(1.5rem + 1.5rem) calc(3rem + 2rem);
+    @media screen and (min-width: 576px) {
+      display: block;
+    }
+  }
+  .mobile-slider-wrapper {
+    padding: 1.5rem;
+    @media screen and (min-width: 576px) {
+      display: none;
+    }
+  }
+}

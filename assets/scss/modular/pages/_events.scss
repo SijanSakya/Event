@@ -1,0 +1,24 @@
+.page--fullpagebg {
+  padding-top: 52px;
+  padding-bottom: 0px;
+  @media screen and (min-width: 1024px) {
+    padding-top: 0px;
+  }
+  .nepathaya-bg {
+    background-image: url("~static/img/pages/watch-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: #060c0a59;
+    }
+  }
+  .title {
+    color: #ffffff;
+  }
+}

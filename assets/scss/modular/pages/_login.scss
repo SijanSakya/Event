@@ -1,0 +1,16 @@
+.page {
+  background-color: #000000;
+  &--bg {
+    background-image: url('~static/img/bg.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media screen and (max-width: 1023px){
+      background-size: cover;
+      background-position: center center;
+    }
+    // @media screen and (max-width: 560px){
+    //   background-image: none;
+    // }
+  }
+}

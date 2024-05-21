@@ -1,0 +1,35 @@
+.signup {
+  &__form {
+    padding: 13px;
+    color: #000000;
+    &--light {
+      background-color: #fff;
+      .input {
+        box-shadow: unset;
+        color: #000000;
+        caret-color: #212121;
+        :active,
+        &:focus {
+          border-color: #000000;
+        }
+      }
+      .show-password {
+        svg {
+          fill: #000;
+        }
+      }
+    }
+    form {
+      padding: 13px;
+      text-align: left;
+    }
+    .field {
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

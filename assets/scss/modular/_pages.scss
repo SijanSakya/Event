@@ -1,0 +1,113 @@
+.page {
+  min-height: calc(100vh - 140px - 96px);
+  @media screen and (min-width: 1024px) {
+    min-height: calc(100vh - 218px);
+  }
+  padding: 60px 0rem;
+  color: white;
+  transition: all 0.3s;
+  &--npt {
+    padding-top: 0px !important;
+  }
+  .title {
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    @media screen and (min-width: 769px) {
+      font-size: 24px;
+    }
+    &--white {
+      color: #ffffff !important;
+    }
+  }
+  .hero-body {
+    flex-direction: column;
+    justify-content: center;
+    &.after-header {
+      padding-top: 5%;
+    }
+    .title {
+      color: #ffffff;
+      font-size: 1.75rem;
+      @media screen and (min-width: 768px) and (max-width: 1200px){
+        font-size: 2rem;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 2.3rem;
+      }
+      @media screen and (min-width: 1404px) {
+        font-size: 3rem;
+      }
+      p {
+        margin-bottom: 0.8rem;
+      }
+      &--large {
+        font-size: 2.5rem !important;
+        margin-bottom: 2rem;
+        @media screen and (max-width: 567px){
+          font-size: 1.75rem !important;
+        }
+        @media screen and (min-width: 1020px) {
+          font-size: 3.5rem !important;
+        }
+        @media screen and (min-width: 1404px) {
+          font-size: 4rem !important;
+        }
+      }
+    }
+  }
+  .column.is-12-mobile {
+    @media screen and (max-width: 1023px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .authenication-form {
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 1023px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  @media screen and (min-width: 1023px) {
+    padding: 90px 0rem;
+  }
+  &--bg {
+    @media screen and (min-width: 1024px) {
+      padding: 160px 0rem;
+    }
+    padding: 30px 0px;
+    .columns {
+      width: 100%;
+      margin: 0px;
+    }
+    .title {
+      color: white;
+    }
+  }
+  .button-wrappers {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    .button,
+    .image-btn {
+      &:first-child {
+        margin-right: 1rem;
+        @media screen and (min-width: 769px) {
+          margin-right: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@import "./pages/login";
+@import "./pages/signup";
+@import "./pages/events";
+@import "./pages/event-details";
+@import "./pages/watch_details";
+@import "./pages/heroslider";

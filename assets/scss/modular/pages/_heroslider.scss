@@ -1,0 +1,18 @@
+.hero.slider {
+  .title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    @media screen and (min-width: 769px) {
+      font-size: 1.75rem;
+    }
+  }
+  // .carousel-item {
+  //   @media screen and (max-width: 1200px) {
+  //     height: 70vh;
+  //     img {
+  //       height: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  // }
+}
